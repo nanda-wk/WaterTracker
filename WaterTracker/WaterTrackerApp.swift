@@ -8,25 +8,22 @@
 import SwiftUI
 import SwiftData
 
+var langDict: [String: [String: String]] = [:]
+
 @main
 struct WaterTrackerApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
+    @StateObject private var preferences = UserPreferences()
+
+    init() {
+        langDict = Bundle.main.decode([String: [String: String]].self, from: "Language.json")
+    }
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OnboardingScreen()
+                .preferredColorScheme(preferences.appTheme.colorScheme)
         }
-        .modelContainer(sharedModelContainer)
+        .environmentObject(preferences)
     }
 }

@@ -8,13 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		53095E5C2C922E7300C0F7DB /* WaterTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095E5B2C922E7300C0F7DB /* WaterTrackerApp.swift */; };
-		53095E5E2C922E7300C0F7DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095E5D2C922E7300C0F7DB /* ContentView.swift */; };
-		53095E602C922E7300C0F7DB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095E5F2C922E7300C0F7DB /* Item.swift */; };
 		53095E622C922E7400C0F7DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53095E612C922E7400C0F7DB /* Assets.xcassets */; };
 		53095E652C922E7400C0F7DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53095E642C922E7400C0F7DB /* Preview Assets.xcassets */; };
 		53095E6F2C922E7400C0F7DB /* WaterTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095E6E2C922E7400C0F7DB /* WaterTrackerTests.swift */; };
 		53095E792C922E7400C0F7DB /* WaterTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095E782C922E7400C0F7DB /* WaterTrackerUITests.swift */; };
 		53095E7B2C922E7400C0F7DB /* WaterTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095E7A2C922E7400C0F7DB /* WaterTrackerUITestsLaunchTests.swift */; };
+		53095E8B2C92C94600C0F7DB /* Language.json in Resources */ = {isa = PBXBuildFile; fileRef = 53095E8A2C92C94600C0F7DB /* Language.json */; };
+		53095E8D2C92CA2500C0F7DB /* LocalizedKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095E8C2C92CA2500C0F7DB /* LocalizedKey.swift */; };
+		53095E912C92CA9700C0F7DB /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095E902C92CA9700C0F7DB /* AppLanguage.swift */; };
+		53095E942C92CBD500C0F7DB /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095E932C92CBD500C0F7DB /* UserPreferences.swift */; };
+		53095E962C92CD8200C0F7DB /* LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095E952C92CD8200C0F7DB /* LocalizedText.swift */; };
+		53095E992C92CE2200C0F7DB /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095E982C92CE2200C0F7DB /* Optional.swift */; };
+		53095E9B2C92D0DE00C0F7DB /* Bundle+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095E9A2C92D0DE00C0F7DB /* Bundle+Decode.swift */; };
+		53095E9F2C92D23600C0F7DB /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095E9E2C92D23600C0F7DB /* SplashScreen.swift */; };
+		53095EAB2C92DBD800C0F7DB /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095EAA2C92DBD800C0F7DB /* OnboardingScreen.swift */; };
+		53095EAD2C92E3B600C0F7DB /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095EAC2C92E3B600C0F7DB /* AppTheme.swift */; };
+		53095EAF2C92E6BB00C0F7DB /* PagingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095EAE2C92E6BB00C0F7DB /* PagingIndicator.swift */; };
+		53095EB12C92E6EA00C0F7DB /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095EB02C92E6EA00C0F7DB /* Onboarding.swift */; };
+		53095EB32C934CFF00C0F7DB /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095EB22C934CFF00C0F7DB /* AppButton.swift */; };
+		53095EB52C93546100C0F7DB /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095EB42C93546100C0F7DB /* Wave.swift */; };
+		53095EB82C93555600C0F7DB /* TabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095EB72C93555600C0F7DB /* TabScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +50,6 @@
 /* Begin PBXFileReference section */
 		53095E582C922E7300C0F7DB /* WaterTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53095E5B2C922E7300C0F7DB /* WaterTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterTrackerApp.swift; sourceTree = "<group>"; };
-		53095E5D2C922E7300C0F7DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		53095E5F2C922E7300C0F7DB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		53095E612C922E7400C0F7DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53095E642C922E7400C0F7DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		53095E6A2C922E7400C0F7DB /* WaterTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +57,21 @@
 		53095E742C922E7400C0F7DB /* WaterTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53095E782C922E7400C0F7DB /* WaterTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterTrackerUITests.swift; sourceTree = "<group>"; };
 		53095E7A2C922E7400C0F7DB /* WaterTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		53095E8A2C92C94600C0F7DB /* Language.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Language.json; sourceTree = "<group>"; };
+		53095E8C2C92CA2500C0F7DB /* LocalizedKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedKey.swift; sourceTree = "<group>"; };
+		53095E902C92CA9700C0F7DB /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
+		53095E932C92CBD500C0F7DB /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		53095E952C92CD8200C0F7DB /* LocalizedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedText.swift; sourceTree = "<group>"; };
+		53095E982C92CE2200C0F7DB /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
+		53095E9A2C92D0DE00C0F7DB /* Bundle+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Decode.swift"; sourceTree = "<group>"; };
+		53095E9E2C92D23600C0F7DB /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		53095EAA2C92DBD800C0F7DB /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
+		53095EAC2C92E3B600C0F7DB /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		53095EAE2C92E6BB00C0F7DB /* PagingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingIndicator.swift; sourceTree = "<group>"; };
+		53095EB02C92E6EA00C0F7DB /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		53095EB22C934CFF00C0F7DB /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		53095EB42C93546100C0F7DB /* Wave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
+		53095EB72C93555600C0F7DB /* TabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +123,12 @@
 			isa = PBXGroup;
 			children = (
 				53095E5B2C922E7300C0F7DB /* WaterTrackerApp.swift */,
-				53095E5D2C922E7300C0F7DB /* ContentView.swift */,
-				53095E5F2C922E7300C0F7DB /* Item.swift */,
-				53095E612C922E7400C0F7DB /* Assets.xcassets */,
-				53095E632C922E7400C0F7DB /* Preview Content */,
+				53095EA42C92D51B00C0F7DB /* Components */,
+				53095E9C2C92D20B00C0F7DB /* Features */,
+				53095E922C92CBC300C0F7DB /* Managers */,
+				53095E8E2C92CA8900C0F7DB /* Models */,
+				53095E882C92C8F100C0F7DB /* Utils */,
+				53095E872C92C58C00C0F7DB /* Resources */,
 			);
 			path = WaterTracker;
 			sourceTree = "<group>";
@@ -128,6 +156,113 @@
 				53095E7A2C922E7400C0F7DB /* WaterTrackerUITestsLaunchTests.swift */,
 			);
 			path = WaterTrackerUITests;
+			sourceTree = "<group>";
+		};
+		53095E872C92C58C00C0F7DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				53095E612C922E7400C0F7DB /* Assets.xcassets */,
+				53095E632C922E7400C0F7DB /* Preview Content */,
+				53095E8A2C92C94600C0F7DB /* Language.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		53095E882C92C8F100C0F7DB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				53095E972C92CE1700C0F7DB /* Extensions */,
+				53095E892C92C92400C0F7DB /* Localization */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		53095E892C92C92400C0F7DB /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				53095E8C2C92CA2500C0F7DB /* LocalizedKey.swift */,
+				53095E952C92CD8200C0F7DB /* LocalizedText.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		53095E8E2C92CA8900C0F7DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				53095E8F2C92CA8F00C0F7DB /* App */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		53095E8F2C92CA8F00C0F7DB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				53095E902C92CA9700C0F7DB /* AppLanguage.swift */,
+				53095EAC2C92E3B600C0F7DB /* AppTheme.swift */,
+				53095EB02C92E6EA00C0F7DB /* Onboarding.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		53095E922C92CBC300C0F7DB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				53095E932C92CBD500C0F7DB /* UserPreferences.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		53095E972C92CE1700C0F7DB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				53095E982C92CE2200C0F7DB /* Optional.swift */,
+				53095E9A2C92D0DE00C0F7DB /* Bundle+Decode.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		53095E9C2C92D20B00C0F7DB /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				53095EB62C93554D00C0F7DB /* Tab */,
+				53095EA92C92DBC900C0F7DB /* Onboarding */,
+				53095E9D2C92D21A00C0F7DB /* SplashScreen */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		53095E9D2C92D21A00C0F7DB /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				53095E9E2C92D23600C0F7DB /* SplashScreen.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		53095EA42C92D51B00C0F7DB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				53095EAE2C92E6BB00C0F7DB /* PagingIndicator.swift */,
+				53095EB22C934CFF00C0F7DB /* AppButton.swift */,
+				53095EB42C93546100C0F7DB /* Wave.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		53095EA92C92DBC900C0F7DB /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				53095EAA2C92DBD800C0F7DB /* OnboardingScreen.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		53095EB62C93554D00C0F7DB /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				53095EB72C93555600C0F7DB /* TabScreen.swift */,
+			);
+			path = Tab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +369,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53095E8B2C92C94600C0F7DB /* Language.json in Resources */,
 				53095E652C922E7400C0F7DB /* Preview Assets.xcassets in Resources */,
 				53095E622C922E7400C0F7DB /* Assets.xcassets in Resources */,
 			);
@@ -260,9 +396,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53095E5E2C922E7300C0F7DB /* ContentView.swift in Sources */,
-				53095E602C922E7300C0F7DB /* Item.swift in Sources */,
+				53095E9F2C92D23600C0F7DB /* SplashScreen.swift in Sources */,
+				53095E942C92CBD500C0F7DB /* UserPreferences.swift in Sources */,
+				53095E8D2C92CA2500C0F7DB /* LocalizedKey.swift in Sources */,
+				53095E962C92CD8200C0F7DB /* LocalizedText.swift in Sources */,
+				53095EB52C93546100C0F7DB /* Wave.swift in Sources */,
+				53095E912C92CA9700C0F7DB /* AppLanguage.swift in Sources */,
+				53095EAB2C92DBD800C0F7DB /* OnboardingScreen.swift in Sources */,
+				53095EB12C92E6EA00C0F7DB /* Onboarding.swift in Sources */,
+				53095EB82C93555600C0F7DB /* TabScreen.swift in Sources */,
+				53095E9B2C92D0DE00C0F7DB /* Bundle+Decode.swift in Sources */,
 				53095E5C2C922E7300C0F7DB /* WaterTrackerApp.swift in Sources */,
+				53095EB32C934CFF00C0F7DB /* AppButton.swift in Sources */,
+				53095E992C92CE2200C0F7DB /* Optional.swift in Sources */,
+				53095EAD2C92E3B600C0F7DB /* AppTheme.swift in Sources */,
+				53095EAF2C92E6BB00C0F7DB /* PagingIndicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,7 +573,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WaterTracker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WaterTracker/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -453,7 +601,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WaterTracker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WaterTracker/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

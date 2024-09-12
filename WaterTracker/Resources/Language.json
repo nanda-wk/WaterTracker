@@ -1,0 +1,50 @@
+{
+    "launchDesc": {
+        "Eng": "Stay hydrated and track your \ndaily water intake",
+        "Mm": "ရေဓာတ်ပြည့်ဝနေ၍ သင်၏နေ့စဉ် \nရေစားသုံးမှုကို ခြေရာခံပါ"
+    },
+    "onboarding1Title": {
+        "Eng": "Track your daily water \nintake with Us.",
+        "Mm": "နေ့စဉ်ရေသောက်ပမာဏကို ကျွန်ုပ်တို့နဲ့အတူ ခြေရာခံပါ။"
+    },
+    "onboarding1Desc": {
+        "Eng": "Achieve your hydration goals with a simple \ntap!",
+        "Mm": "ရိုးရှင်းတဲ့ တစ်ချက်နှိပ်ခြင်းဖြင့် ရေဖြည့်သောက်မှုပန်းတိုင်ကို \nရောက်ရှိပါစေ!"
+    },
+    "onboarding2Title": {
+        "Eng": "Smart Reminders \nTailored to You",
+        "Mm": "သင့်လိုအပ်ချက်အတွက် အထူးသျှင် \nဂရုစိုက်သော မှတ်ဉာဏ်သတိပေးမှုများ"
+    },
+    "onboarding2Desc": {
+        "Eng": "Quick and easy to set your hydration goal & \nthen track your daily water intake progress.",
+        "Mm": "သင့်ရေဖြည့်သောက်မှုပန်းတိုင်ကို ချက်ချင်းနှင့် လွယ်ကူစွာ သတ်မှတ်ပြီး နေ့စဉ်ရေသောက်ပမာဏ \nတိုးတက်မှုကို ခြေရာခံပါ။"
+    },
+    "onboarding3Title": {
+        "Eng": "Easy to Use – Drink, Tap, \nRepeat",
+        "Mm": "သုံးရလွယ်ကူ – ရေသောက်၊ တစ်ချက်နှိပ်၊ \nပြန်လုပ်ပါ"
+    },
+    "onboarding3Desc": {
+        "Eng": "Staying hydrated every day is easy with \nDrops Water Tracker.",
+        "Mm": "နေ့စဉ်ရေဖြည့်သောက်မှုကို Drops Water Tracker နဲ့ \nလွယ်ကူစွာ ထိန်းသိမ်းနိုင်ပါသည်။"
+    },
+    "btnGetStarted": {
+        "Eng": "GET STARTED",
+        "Mm": "စသုံးမယ်"
+    },
+    "home": {
+        "Eng": "Home",
+        "Mm": "ပင်မစာမျက်နှာ"
+    },
+    "analysis": {
+        "Eng": "Analysis",
+        "Mm": "သုံးသပ်ချက်"
+    },
+    "settings": {
+      "Eng": "Settings",
+      "Mm": "ပြင်ဆင်ချက်"
+    },
+    "profile": {
+        "Eng": "Profile",
+        "Mm": "ကိုယ်ရေးအချက်အလက်"
+    }
+}
