@@ -21,7 +21,9 @@ struct WaterTrackerApp: App {
 
     var body: some Scene {
         WindowGroup {
-            OnboardingScreen()
+            NavigationView {
+                TabScreen()
+            }
                 .preferredColorScheme(preferences.appTheme.colorScheme)
         }
         .environmentObject(preferences)
