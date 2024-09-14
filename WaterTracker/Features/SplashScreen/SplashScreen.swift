@@ -26,7 +26,7 @@ struct SplashScreen: View {
                     .fontWeight(.bold)
                     .foregroundStyle(.white)
 
-                LocalizedText(.launchDesc)
+                LocalizedText(.launch_desc)
                     .font(.subheadline)
                     .foregroundStyle(.white)
                     .multilineTextAlignment(.center)

@@ -30,7 +30,7 @@ struct AppButton: View {
 }
 
 #Preview {
-    AppButton(title: .btnGetStarted) {
+    AppButton(title: .btn_get_started) {
 
     }
     .environmentObject(UserPreferences())

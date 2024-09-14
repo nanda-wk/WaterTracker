@@ -14,10 +14,10 @@ struct TabScreen: View {
     }
 
     var body: some View {
-        VStack {
+        ZStack(alignment: .bottom) {
             TabView(selection: $selected) {
                 NavigationView {
-                    LocalizedText(TabItem.home.title)
+                    HomeScreen()
                 }
                 .tag(TabItem.home)
 
@@ -39,6 +39,7 @@ struct TabScreen: View {
 
             CustomTabItem(allTabs)
         }
+        .ignoresSafeArea(edges: .bottom)
     }
 
     @ViewBuilder
@@ -54,8 +55,8 @@ struct TabScreen: View {
                             ZStack {
                                 Circle()
                                     .frame(width: 70, height: 70)
-                                    .foregroundStyle(.white)
-                                    .shadow(radius: 10)
+                                    .foregroundStyle(.textWhite)
+                                    .shadow(radius: 4)
 
                                 tab.icon
                                     .resizable()
@@ -96,6 +97,7 @@ struct TabScreen: View {
         }
         .frame(maxWidth: .infinity)
         .frame(height: 80)
+        .padding(.bottom)
         .background(
             Color.textWhite
                 .shadow(color: .textGray, radius: 1, x: 0, y: 0)

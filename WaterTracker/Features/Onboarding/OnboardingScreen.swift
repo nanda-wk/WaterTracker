@@ -16,7 +16,7 @@ struct OnboardingScreen: View {
                 VStack(spacing: 40) {
                     HStack {
                         ForEach(Onboarding.onbordingCards, id: \.self) { card in
-                            Onboardingcard(card)
+                            OnboardingCard(card)
                         }
                     }
                     .scrollTargetLayout()
@@ -30,7 +30,7 @@ struct OnboardingScreen: View {
 
             Spacer()
 
-            AppButton(title: .btnGetStarted) {
+            AppButton(title: .btn_get_started) {
                 
             }
             .padding(.horizontal, 28)
@@ -39,7 +39,7 @@ struct OnboardingScreen: View {
     }
 
     @ViewBuilder
-    func Onboardingcard(_ card: Onboarding) -> some View {
+    func OnboardingCard(_ card: Onboarding) -> some View {
         VStack(spacing: 25) {
             Image(card.image)
                 .resizable()

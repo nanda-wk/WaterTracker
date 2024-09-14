@@ -1,33 +1,33 @@
 {
-    "launchDesc": {
+    "launch_desc": {
         "Eng": "Stay hydrated and track your \ndaily water intake",
         "Mm": "ရေဓာတ်ပြည့်ဝနေ၍ သင်၏နေ့စဉ် \nရေစားသုံးမှုကို ခြေရာခံပါ"
     },
-    "onboarding1Title": {
+    "onboarding_1_title": {
         "Eng": "Track your daily water \nintake with Us.",
         "Mm": "နေ့စဉ်ရေသောက်ပမာဏကို ကျွန်ုပ်တို့နဲ့အတူ ခြေရာခံပါ။"
     },
-    "onboarding1Desc": {
+    "onboarding_1_desc": {
         "Eng": "Achieve your hydration goals with a simple \ntap!",
         "Mm": "ရိုးရှင်းတဲ့ တစ်ချက်နှိပ်ခြင်းဖြင့် ရေဖြည့်သောက်မှုပန်းတိုင်ကို \nရောက်ရှိပါစေ!"
     },
-    "onboarding2Title": {
+    "onboarding_2_title": {
         "Eng": "Smart Reminders \nTailored to You",
         "Mm": "သင့်လိုအပ်ချက်အတွက် အထူးသျှင် \nဂရုစိုက်သော မှတ်ဉာဏ်သတိပေးမှုများ"
     },
-    "onboarding2Desc": {
+    "onboarding_2_desc": {
         "Eng": "Quick and easy to set your hydration goal & \nthen track your daily water intake progress.",
         "Mm": "သင့်ရေဖြည့်သောက်မှုပန်းတိုင်ကို ချက်ချင်းနှင့် လွယ်ကူစွာ သတ်မှတ်ပြီး နေ့စဉ်ရေသောက်ပမာဏ \nတိုးတက်မှုကို ခြေရာခံပါ။"
     },
-    "onboarding3Title": {
+    "onboarding_3_title": {
         "Eng": "Easy to Use – Drink, Tap, \nRepeat",
         "Mm": "သုံးရလွယ်ကူ – ရေသောက်၊ တစ်ချက်နှိပ်၊ \nပြန်လုပ်ပါ"
     },
-    "onboarding3Desc": {
+    "onboarding_3_desc": {
         "Eng": "Staying hydrated every day is easy with \nDrops Water Tracker.",
         "Mm": "နေ့စဉ်ရေဖြည့်သောက်မှုကို Drops Water Tracker နဲ့ \nလွယ်ကူစွာ ထိန်းသိမ်းနိုင်ပါသည်။"
     },
-    "btnGetStarted": {
+    "btn_get_started": {
         "Eng": "GET STARTED",
         "Mm": "စသုံးမယ်"
     },
@@ -46,5 +46,29 @@
     "profile": {
         "Eng": "Profile",
         "Mm": "ကိုယ်ရေးအချက်အလက်"
+    },
+    "greeting": {
+        "Eng": "Good Morning,",
+        "Mm": "မင်္ဂလာနံနက်ခင်းပါ၊"
+    },
+    "x_ml_x_glass": {
+        "Eng": "{$}ml water({$} Glass)",
+        "Mm": "ရေ {$}ml (ဖန်ခွက် {$} လုံး)"
+    },
+    "btn_add_goal": {
+        "Eng": "Add Your Goal",
+        "Mm": "သင့်ရည်မှန်းချက်ထည့်ပါ"
+    },
+    "target": {
+        "Eng": "Target",
+        "Mm": "ပစ်မှတ်"
+    },
+    "btn_go_to_dashboard": {
+        "Eng": "Go To Dashboard",
+        "Mm": "ဒက်ရှ်ဘုတ်သို့ သွားပါ"
+    },
+    "x_goal_motivation": {
+        "Eng": "You got {$}%% of today’s goal, keep \nfocus on your health!",
+        "Mm": "ယနေ့ရည်မှန်းချက်၏ {$}%% ကို ရရှိပြီးပါပြီ၊ \nသင့်ကျန်းမာရေးအပေါ် ဂရုစိုက်ပါ!"
     }
 }

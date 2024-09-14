@@ -8,60 +8,60 @@
 import SwiftUI
 
 struct Wave: Shape {
-    var progress: CGFloat // For animating the wave
-
-    var animatableData: CGFloat {
-        get { progress }
-        set { progress = newValue }
-    }
+    var amplitude: CGFloat
+    var frequency: CGFloat
+    var phase: CGFloat
 
     func path(in rect: CGRect) -> Path {
         var path = Path()
-        let height = rect.height
+        let midHeight = rect.height / 2
         let width = rect.width
 
-        let waveHeight: CGFloat = 20
-        let waveLength = width / 2
-
         // Start at the bottom left
-        path.move(to: CGPoint(x: 0, y: height))
+        path.move(to: CGPoint(x: 0, y: rect.height))
 
-        // Draw wave using sinusoidal curves
-        for x in stride(from: 0, to: width, by: 1) {
-            let relativeX = x / waveLength
-            let sine = sin(relativeX + progress * 2 * .pi)
-            let y = waveHeight * sine + (height / 2)
+        // Loop through each x-value and calculate y based on the sine wave
+        for x in stride(from: 0, through: width, by: 1) {
+            let relativeX = x / width
+            let normalizedAngle = relativeX * frequency * .pi * 2
+            let y = midHeight + sin(normalizedAngle + phase) * amplitude
+
             path.addLine(to: CGPoint(x: x, y: y))
         }
 
-        // Close path
-        path.addLine(to: CGPoint(x: width, y: height))
-        path.addLine(to: CGPoint(x: 0, y: height))
+        // Close the path by drawing a line to the bottom right and back to the bottom left
+        path.addLine(to: CGPoint(x: width, y: rect.height))
+        path.addLine(to: CGPoint(x: 0, y: rect.height))
 
         return path
     }
 }
 
 struct AnimatedWaveView: View {
-    @State private var waveOffset: CGFloat = 0.0
+    @State private var phase1: CGFloat = 0
+    @State private var phase2: CGFloat = 0
+
+    // Timer to animate the waves
+    private let timer = Timer.publish(every: 0.02, on: .main, in: .common).autoconnect()
 
     var body: some View {
         ZStack {
-            Wave(progress: waveOffset)
-                .fill(Color.blue.opacity(0.3)) // Make the wave slightly transparent
+            // First Wave
+            Wave(amplitude: 20, frequency: 2, phase: phase1)
+                .fill(.appPrimary)
                 .frame(height: 100)
-                .offset(y: 150) // Positioning of the wave
+                .offset(y: 50)
 
-            // Add a second wave with a different phase for a layered effect
-            Wave(progress: waveOffset + 0.5)
-                .fill(Color.blue.opacity(0.2))
+            // Second Wave
+            Wave(amplitude: 15, frequency: 3, phase: phase2)
+                .fill(.appPrimary.opacity(0.4))
                 .frame(height: 100)
-                .offset(y: 160)
+                .offset(y: 50)
         }
-        .onAppear {
-            withAnimation(.linear(duration: 2).repeatForever(autoreverses: false)) {
-                waveOffset = 1.0
-            }
+        .onReceive(timer) { _ in
+            // Update the phase to animate the waves
+            phase1 -= 0.05
+            phase2 += 0.03
         }
     }
 }
