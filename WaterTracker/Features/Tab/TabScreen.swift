@@ -10,12 +10,12 @@ import SwiftUI
 struct TabScreen: View {
     @State private var selected: TabItem = .home
     @State private var allTabs: [AnimatedTab] = TabItem.allCases.compactMap { tab in
-            .init(tab: tab)
+        .init(tab: tab)
     }
 
     var body: some View {
         ZStack(alignment: .bottom) {
-            TabView(selection: $selected) {
+            TabView(selection: self.$selected) {
                 NavigationView {
                     HomeScreen()
                 }
@@ -37,7 +37,7 @@ struct TabScreen: View {
                 .tag(TabItem.profile)
             }
 
-            CustomTabItem(allTabs)
+            self.CustomTabItem(self.allTabs)
         }
         .ignoresSafeArea(edges: .bottom)
     }
@@ -77,13 +77,12 @@ struct TabScreen: View {
                     LocalizedText(tab.title)
                         .font(.callout)
                         .fontWeight(.medium)
-
                 }
                 .padding(.top, 10)
-                .foregroundStyle(selected == tab ? .appPrimary : .textBlack)
+                .foregroundStyle(self.selected == tab ? .appPrimary : .textBlack)
                 .onTapGesture {
                     withAnimation(.bouncy) {
-                        selected = tab
+                        self.selected = tab
                         animatedTab.isAnimating = true
                     } completion: {
                         var transaction = Transaction()
@@ -106,7 +105,7 @@ struct TabScreen: View {
     }
 }
 
-fileprivate enum TabItem: String, CaseIterable, Hashable, Identifiable {
+private enum TabItem: String, CaseIterable, Hashable, Identifiable {
     case home
     case analysis
     case goal
@@ -148,7 +147,7 @@ fileprivate enum TabItem: String, CaseIterable, Hashable, Identifiable {
     }
 }
 
-fileprivate struct AnimatedTab: Identifiable {
+private struct AnimatedTab: Identifiable {
     let id = UUID()
     var tab: TabItem
     var isAnimating: Bool?

@@ -30,7 +30,6 @@ struct SplashScreen: View {
                     .font(.subheadline)
                     .foregroundStyle(.white)
                     .multilineTextAlignment(.center)
-
             }
         }
     }

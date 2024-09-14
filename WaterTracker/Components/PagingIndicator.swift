@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct PagingIndicator: View {
-
     /// Customization properties
     var activeTint: Color = .appPrimary
     var inactiveTint: Color = .appPrimary.opacity(0.25)
@@ -23,7 +22,6 @@ struct PagingIndicator: View {
             let width = $0.size.width
             /// ScrollView boounds
             if let scrollViewWidth = $0.bounds(of: .scrollView(axis: .horizontal))?.width, scrollViewWidth > 0 {
-
                 let minX = $0.frame(in: .scrollView(axis: .horizontal)).minX
                 let totalPages = Int(width / scrollViewWidth)
 
@@ -42,7 +40,7 @@ struct PagingIndicator: View {
                 let nextPageWidth = indicatorProgress * spacingAndDotSize
 
                 HStack(spacing: hstackSpacing) {
-                    ForEach(0..<totalPages, id: \.self) { index in
+                    ForEach(0 ..< totalPages, id: \.self) { index in
                         Capsule()
                             .fill(inactiveTint)
                             .frame(width: dotSize + ((activeIndex == index) ? currentPageWidth : (nextIndex == index) ? nextPageWidth : 0),
@@ -55,17 +53,15 @@ struct PagingIndicator: View {
                                     Capsule()
                                         .fill(activeTint)
                                         .opacity(opacityEffect ?
-                                                 (activeIndex == index) ? 1 - indicatorProgress : (nextIndex == index) ? indicatorProgress : 0
-                                                 : 1
+                                            (activeIndex == index) ? 1 - indicatorProgress : (nextIndex == index) ? indicatorProgress : 0
+                                            : 1
                                         )
                                 }
                             }
                     } //: LOOP DOTS
                 } //: HSTACK
                 .frame(width: scrollViewWidth)
-
                 .offset(x: -minX)
-
             }
         } //: GEOMETRY
         .frame(height: 30)

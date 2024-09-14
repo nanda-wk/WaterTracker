@@ -8,7 +8,6 @@
 import Foundation
 
 extension Optional where Wrapped == String {
-
     var orEmpty: String {
         switch self {
         case .none: return ""
@@ -23,5 +22,4 @@ extension Optional where Wrapped == String {
     func ifNilOrEmpty(_ value: String) -> String {
         self.orEmpty.isEmpty ? value : self.orEmpty
     }
-
 }

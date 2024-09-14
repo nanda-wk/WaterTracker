@@ -17,7 +17,6 @@ struct HomeScreen: View {
     private let timer = Timer.publish(every: 0.02, on: .main, in: .common).autoconnect()
 
     var body: some View {
-
         ScrollView {
             VStack {
                 NavBar()
@@ -27,15 +26,13 @@ struct HomeScreen: View {
                 StaticSection()
 
                 VStack(spacing: 20) {
-                    AppButton(title: .btn_go_to_dashboard) {
-
-                    }
-                    .frame(width: 200)
-                    .background(
-                        Color.white
-                            .cornerRadius(8)
-                            .shadow(color: .black.opacity(0.25), radius: 4, x: 4, y: 4)
-                    )
+                    AppButton(title: .btn_go_to_dashboard) {}
+                        .frame(width: 200)
+                        .background(
+                            Color.white
+                                .cornerRadius(8)
+                                .shadow(color: .black.opacity(0.25), radius: 4, x: 4, y: 4)
+                        )
 
                     LocalizedText(.x_goal_motivation, args: [localizeNumber(preferences.appLang, str: "50")])
                         .font(.footnote)
@@ -115,9 +112,7 @@ struct HomeScreen: View {
                         .foregroundStyle(.textGray)
                     }
 
-                    Button {
-
-                    } label: {
+                    Button {} label: {
                         LocalizedText(.btn_add_goal)
                             .font(.body)
                             .fontWeight(.medium)
@@ -165,7 +160,6 @@ struct HomeScreen: View {
                     .fontWeight(.semibold)
                     .foregroundStyle(.textWhite)
                     .padding(.bottom, 26)
-
             }
             .frame(height: 160)
             .clipShape(Circle())

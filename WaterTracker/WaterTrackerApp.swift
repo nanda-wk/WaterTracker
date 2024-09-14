@@ -5,14 +5,13 @@
 //  Created by Nanda WK on 2024-09-12.
 //
 
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 var langDict: [String: [String: String]] = [:]
 
 @main
 struct WaterTrackerApp: App {
-
     @StateObject private var preferences = UserPreferences()
 
     init() {
@@ -24,7 +23,7 @@ struct WaterTrackerApp: App {
             NavigationView {
                 TabScreen()
             }
-                .preferredColorScheme(preferences.appTheme.colorScheme)
+            .preferredColorScheme(preferences.appTheme.colorScheme)
         }
         .environmentObject(preferences)
     }

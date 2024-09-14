@@ -8,7 +8,6 @@
 import SwiftUI
 
 enum AppLanguage: String {
-
     case Eng
     case Mm
 

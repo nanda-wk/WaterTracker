@@ -24,14 +24,11 @@ struct AppButton: View {
                     .fontWeight(.bold)
                     .foregroundColor(.textWhite)
             }
-
         }
     }
 }
 
 #Preview {
-    AppButton(title: .btn_get_started) {
-
-    }
-    .environmentObject(UserPreferences())
+    AppButton(title: .btn_get_started) {}
+        .environmentObject(UserPreferences())
 }

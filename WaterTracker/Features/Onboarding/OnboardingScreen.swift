@@ -30,11 +30,9 @@ struct OnboardingScreen: View {
 
             Spacer()
 
-            AppButton(title: .btn_get_started) {
-                
-            }
-            .padding(.horizontal, 28)
-            .padding(.bottom, 28)
+            AppButton(title: .btn_get_started) {}
+                .padding(.horizontal, 28)
+                .padding(.bottom, 28)
         }
     }
 

@@ -12,4 +12,3 @@ class UserPreferences: ObservableObject {
     @AppStorage("appLang") var appLang: AppLanguage = .Eng
     @AppStorage("appTheme") var appTheme: AppTheme = .system
 }
-
