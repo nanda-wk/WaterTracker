@@ -30,6 +30,10 @@
 		53095EB82C93555600C0F7DB /* TabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095EB72C93555600C0F7DB /* TabScreen.swift */; };
 		536569902C957C820012E7BD /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5365698F2C957C820012E7BD /* HomeScreen.swift */; };
 		536569922C9588B50012E7BD /* HomeScreenVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536569912C9588B50012E7BD /* HomeScreenVM.swift */; };
+		53C5D98C2C96B6C1007D2932 /* AnalysisScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C5D98B2C96B6C1007D2932 /* AnalysisScreen.swift */; };
+		53C5D98E2C96C240007D2932 /* NotificationBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C5D98D2C96C240007D2932 /* NotificationBadge.swift */; };
+		53C5D9902C96EA99007D2932 /* LocalizedNavTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C5D98F2C96EA99007D2932 /* LocalizedNavTitle.swift */; };
+		53C5D9922C96EF3B007D2932 /* ActivityRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C5D9912C96EF3B007D2932 /* ActivityRing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +80,10 @@
 		53095EB72C93555600C0F7DB /* TabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabScreen.swift; sourceTree = "<group>"; };
 		5365698F2C957C820012E7BD /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		536569912C9588B50012E7BD /* HomeScreenVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVM.swift; sourceTree = "<group>"; };
+		53C5D98B2C96B6C1007D2932 /* AnalysisScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisScreen.swift; sourceTree = "<group>"; };
+		53C5D98D2C96C240007D2932 /* NotificationBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBadge.swift; sourceTree = "<group>"; };
+		53C5D98F2C96EA99007D2932 /* LocalizedNavTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNavTitle.swift; sourceTree = "<group>"; };
+		53C5D9912C96EF3B007D2932 /* ActivityRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +194,7 @@
 			children = (
 				53095E8C2C92CA2500C0F7DB /* LocalizedKey.swift */,
 				53095E952C92CD8200C0F7DB /* LocalizedText.swift */,
+				53C5D98F2C96EA99007D2932 /* LocalizedNavTitle.swift */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -228,6 +237,7 @@
 		53095E9C2C92D20B00C0F7DB /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				53C5D98A2C96B6B4007D2932 /* Analysis */,
 				5365698E2C957C790012E7BD /* Home */,
 				53095EB62C93554D00C0F7DB /* Tab */,
 				53095EA92C92DBC900C0F7DB /* Onboarding */,
@@ -250,6 +260,8 @@
 				53095EAE2C92E6BB00C0F7DB /* PagingIndicator.swift */,
 				53095EB22C934CFF00C0F7DB /* AppButton.swift */,
 				53095EB42C93546100C0F7DB /* Wave.swift */,
+				53C5D98D2C96C240007D2932 /* NotificationBadge.swift */,
+				53C5D9912C96EF3B007D2932 /* ActivityRing.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -277,6 +289,14 @@
 				536569912C9588B50012E7BD /* HomeScreenVM.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		53C5D98A2C96B6B4007D2932 /* Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				53C5D98B2C96B6C1007D2932 /* AnalysisScreen.swift */,
+			);
+			path = Analysis;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,18 +433,22 @@
 				53095E9F2C92D23600C0F7DB /* SplashScreen.swift in Sources */,
 				53095E942C92CBD500C0F7DB /* UserPreferences.swift in Sources */,
 				53095E8D2C92CA2500C0F7DB /* LocalizedKey.swift in Sources */,
+				53C5D98C2C96B6C1007D2932 /* AnalysisScreen.swift in Sources */,
+				53C5D9902C96EA99007D2932 /* LocalizedNavTitle.swift in Sources */,
 				53095E962C92CD8200C0F7DB /* LocalizedText.swift in Sources */,
 				536569902C957C820012E7BD /* HomeScreen.swift in Sources */,
 				53095EB52C93546100C0F7DB /* Wave.swift in Sources */,
 				53095E912C92CA9700C0F7DB /* AppLanguage.swift in Sources */,
 				53095EAB2C92DBD800C0F7DB /* OnboardingScreen.swift in Sources */,
 				536569922C9588B50012E7BD /* HomeScreenVM.swift in Sources */,
+				53C5D9922C96EF3B007D2932 /* ActivityRing.swift in Sources */,
 				53095EB12C92E6EA00C0F7DB /* Onboarding.swift in Sources */,
 				53095EB82C93555600C0F7DB /* TabScreen.swift in Sources */,
 				53095E9B2C92D0DE00C0F7DB /* Bundle+Decode.swift in Sources */,
 				53095E5C2C922E7300C0F7DB /* WaterTrackerApp.swift in Sources */,
 				53095EB32C934CFF00C0F7DB /* AppButton.swift in Sources */,
 				53095E992C92CE2200C0F7DB /* Optional.swift in Sources */,
+				53C5D98E2C96C240007D2932 /* NotificationBadge.swift in Sources */,
 				53095EAD2C92E3B600C0F7DB /* AppTheme.swift in Sources */,
 				53095EAF2C92E6BB00C0F7DB /* PagingIndicator.swift in Sources */,
 			);

@@ -70,5 +70,45 @@
     "x_goal_motivation": {
         "Eng": "You got {$}%% of today’s goal, keep \nfocus on your health!",
         "Mm": "ယနေ့ရည်မှန်းချက်၏ {$}%% ကို ရရှိပြီးပါပြီ၊ \nသင့်ကျန်းမာရေးအပေါ် ဂရုစိုက်ပါ!"
+    },
+    "title_anaylsis": {
+        "Eng": "For Today",
+        "Mm":  "ယနေ့အတွက်"
+    },
+    "water": {
+        "Eng": "Water",
+        "Mm": "ရေ"
+    },
+    "x_liter": {
+        "Eng": "{$} liters",
+        "Mm": "{$} လီတာ"
+    },
+    "walk": {
+        "Eng": "Walk",
+        "Mm": "လမ်းလျှောက်"
+    },
+    "steps_completed": {
+        "Eng": "Steps \nCompleted",
+        "Mm": "လှမ်းများ \nပြီးစီးပြီ"
+    },
+    "calories": {
+        "Eng": "Calories",
+        "Mm": "Calories"
+    },
+    "kcol": {
+        "Eng": "Kcol",
+        "Mm": "Kcol"
+    },
+    "hours": {
+        "Eng": "Hours",
+        "Mm": "နာရီ"
+    },
+    "sleep": {
+        "Eng": "Sleep",
+        "Mm": "အိပ်ရေး"
+    },
+    "heart": {
+        "Eng": "Heart",
+        "Mm": "နှလုံးသား"
     }
 }

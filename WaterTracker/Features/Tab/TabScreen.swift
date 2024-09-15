@@ -22,7 +22,7 @@ struct TabScreen: View {
                 .tag(TabItem.home)
 
                 NavigationView {
-                    LocalizedText(TabItem.analysis.title)
+                    AnalysisScreen()
                 }
                 .tag(TabItem.analysis)
 

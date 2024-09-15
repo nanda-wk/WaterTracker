@@ -76,6 +76,7 @@ struct HomeScreen: View {
                     .frame(width: 20, height: 20)
                     .foregroundStyle(.appPrimary)
             }
+            .notificationBadge(showBadge: true)
         }
     }
 
