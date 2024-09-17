@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,6 +34,7 @@
 		53C5D98E2C96C240007D2932 /* NotificationBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C5D98D2C96C240007D2932 /* NotificationBadge.swift */; };
 		53C5D9902C96EA99007D2932 /* LocalizedNavTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C5D98F2C96EA99007D2932 /* LocalizedNavTitle.swift */; };
 		53C5D9922C96EF3B007D2932 /* ActivityRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C5D9912C96EF3B007D2932 /* ActivityRing.swift */; };
+		53D8E7662C99516F00AC1BC7 /* DropDownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D8E7652C99516F00AC1BC7 /* DropDownMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +85,12 @@
 		53C5D98D2C96C240007D2932 /* NotificationBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBadge.swift; sourceTree = "<group>"; };
 		53C5D98F2C96EA99007D2932 /* LocalizedNavTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedNavTitle.swift; sourceTree = "<group>"; };
 		53C5D9912C96EF3B007D2932 /* ActivityRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRing.swift; sourceTree = "<group>"; };
+		53D8E7652C99516F00AC1BC7 /* DropDownMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		53D8E7622C99419000AC1BC7 /* SetYourGoal */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = SetYourGoal; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		53095E552C922E7300C0F7DB /* Frameworks */ = {
@@ -237,6 +243,7 @@
 		53095E9C2C92D20B00C0F7DB /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				53D8E7622C99419000AC1BC7 /* SetYourGoal */,
 				53C5D98A2C96B6B4007D2932 /* Analysis */,
 				5365698E2C957C790012E7BD /* Home */,
 				53095EB62C93554D00C0F7DB /* Tab */,
@@ -262,6 +269,7 @@
 				53095EB42C93546100C0F7DB /* Wave.swift */,
 				53C5D98D2C96C240007D2932 /* NotificationBadge.swift */,
 				53C5D9912C96EF3B007D2932 /* ActivityRing.swift */,
+				53D8E7652C99516F00AC1BC7 /* DropDownMenu.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -314,6 +322,9 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				53D8E7622C99419000AC1BC7 /* SetYourGoal */,
+			);
 			name = WaterTracker;
 			productName = WaterTracker;
 			productReference = 53095E582C922E7300C0F7DB /* WaterTracker.app */;
@@ -363,7 +374,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					53095E572C922E7300C0F7DB = {
 						CreatedOnToolsVersion = 15.4;
@@ -435,6 +446,7 @@
 				53095E8D2C92CA2500C0F7DB /* LocalizedKey.swift in Sources */,
 				53C5D98C2C96B6C1007D2932 /* AnalysisScreen.swift in Sources */,
 				53C5D9902C96EA99007D2932 /* LocalizedNavTitle.swift in Sources */,
+				53D8E7662C99516F00AC1BC7 /* DropDownMenu.swift in Sources */,
 				53095E962C92CD8200C0F7DB /* LocalizedText.swift in Sources */,
 				536569902C957C820012E7BD /* HomeScreen.swift in Sources */,
 				53095EB52C93546100C0F7DB /* Wave.swift in Sources */,
@@ -621,6 +633,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -649,6 +662,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -665,7 +679,6 @@
 		53095E822C922E7400C0F7DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -684,7 +697,6 @@
 		53095E832C922E7400C0F7DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -703,7 +715,6 @@
 		53095E852C922E7400C0F7DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -720,7 +731,6 @@
 		53095E862C922E7400C0F7DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

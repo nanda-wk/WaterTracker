@@ -37,6 +37,9 @@ enum LocalizedKey: String {
     case hours
     case sleep
     case heart
+    case title_set_your_goal
+    case water_goal
+    case water_goal_desc
 
     func localize(_ lang: AppLanguage) -> String? {
         let dict = langDict[rawValue]

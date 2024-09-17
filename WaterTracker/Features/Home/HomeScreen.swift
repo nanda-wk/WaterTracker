@@ -113,7 +113,7 @@ struct HomeScreen: View {
                         .foregroundStyle(.textGray)
                     }
 
-                    Button {} label: {
+                    NavigationLink(destination: SetYourGoalScreen()) {
                         LocalizedText(.btn_add_goal)
                             .font(.body)
                             .fontWeight(.medium)

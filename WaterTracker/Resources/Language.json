@@ -110,5 +110,17 @@
     "heart": {
         "Eng": "Heart",
         "Mm": "နှလုံးသား"
+    },
+    "title_set_your_goal": {
+        "Eng": "Set Your Goal",
+        "Mm": "သင့်ရည်မှန်းချက်ကို သတ်မှတ်ပါ"
+    },
+    "water_goal": {
+        "Eng": "Water Goal",
+        "Mm": "ရေသောက်ပန်းတိုင်"
+    },
+    "water_goal_desc": {
+        "Eng": "We prepared a lot of goals for you!",
+        "Mm": "ကျွန်ုပ်တို့က သင့်အတွက် ရည်မှန်းချက်များစွာ ပြင်ဆင်ထားပါတယ်!"
     }
 }
