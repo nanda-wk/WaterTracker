@@ -28,6 +28,16 @@ struct AppButton: View {
     }
 }
 
+struct BackButton: View {
+    var action: () -> Void
+    var body: some View {
+        Button (action: action) {
+            Image(systemName: "arrow.backward")
+                .foregroundStyle(.appPrimary)
+        }
+    }
+}
+
 #Preview {
     AppButton(title: .btn_get_started) {}
         .environmentObject(UserPreferences())

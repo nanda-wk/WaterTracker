@@ -122,5 +122,37 @@
     "water_goal_desc": {
         "Eng": "We prepared a lot of goals for you!",
         "Mm": "ကျွန်ုပ်တို့က သင့်အတွက် ရည်မှန်းချက်များစွာ ပြင်ဆင်ထားပါတယ်!"
+    },
+    "title_profile": {
+        "Eng": "My Profile",
+        "Mm": "ကိုယ်ရေးအချက်အလက်"
+    },
+    "first_name": {
+        "Eng": "First Name",
+        "Mm": "နာမည်"
+    },
+    "last_name": {
+        "Eng": "Last Name",
+        "Mm": "မျိုးနာမည်"
+    },
+    "email": {
+        "Eng": "Email Address",
+        "Mm": "အီးမေးလ်လိပ်စာ"
+    },
+    "age": {
+        "Eng": "Age",
+        "Mm": "အသက်"
+    },
+    "error_textfield_blank": {
+        "Eng": "This field can not be blank!.",
+        "Mm": "အကွက်အလွတ် မဖြစ်နိုင်ပါ။"
+    },
+    "choose_a_language": {
+        "Eng": "Select a Language",
+        "Mm": "ဘာသာစကားကို ရွေးချယ်ပါ"
+    },
+    "app_language": {
+        "Eng": "Change Language",
+        "Mm": "ဘာသာစကားကို ရွေးချယ်ပါ"
     }
 }

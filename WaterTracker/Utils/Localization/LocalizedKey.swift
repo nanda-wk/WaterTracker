@@ -40,6 +40,14 @@ enum LocalizedKey: String {
     case title_set_your_goal
     case water_goal
     case water_goal_desc
+    case title_profile
+    case first_name
+    case last_name
+    case email
+    case age
+    case error_textfield_blank
+    case choose_a_language
+    case app_language
 
     func localize(_ lang: AppLanguage) -> String? {
         let dict = langDict[rawValue]

@@ -81,11 +81,8 @@ struct SetYourGoalScreen: View {
             .navigationBarBackButtonHidden(true)
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
-                    Button {
+                    BackButton {
                         dismiss()
-                    } label: {
-                        Image(systemName: "arrow.backward")
-                            .foregroundStyle(.appPrimary)
                     }
                 }
             }

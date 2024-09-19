@@ -28,6 +28,8 @@
 		53095EB32C934CFF00C0F7DB /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095EB22C934CFF00C0F7DB /* AppButton.swift */; };
 		53095EB52C93546100C0F7DB /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095EB42C93546100C0F7DB /* Wave.swift */; };
 		53095EB82C93555600C0F7DB /* TabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095EB72C93555600C0F7DB /* TabScreen.swift */; };
+		535C2AFB2C9C30F500B4C026 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535C2AFA2C9C30F500B4C026 /* CustomTextField.swift */; };
+		535C2B032C9C5C5000B4C026 /* LocalizedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535C2B022C9C5C5000B4C026 /* LocalizedButton.swift */; };
 		536569902C957C820012E7BD /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5365698F2C957C820012E7BD /* HomeScreen.swift */; };
 		536569922C9588B50012E7BD /* HomeScreenVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536569912C9588B50012E7BD /* HomeScreenVM.swift */; };
 		53C5D98C2C96B6C1007D2932 /* AnalysisScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C5D98B2C96B6C1007D2932 /* AnalysisScreen.swift */; };
@@ -79,6 +81,8 @@
 		53095EB22C934CFF00C0F7DB /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
 		53095EB42C93546100C0F7DB /* Wave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
 		53095EB72C93555600C0F7DB /* TabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabScreen.swift; sourceTree = "<group>"; };
+		535C2AFA2C9C30F500B4C026 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		535C2B022C9C5C5000B4C026 /* LocalizedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedButton.swift; sourceTree = "<group>"; };
 		5365698F2C957C820012E7BD /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		536569912C9588B50012E7BD /* HomeScreenVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVM.swift; sourceTree = "<group>"; };
 		53C5D98B2C96B6C1007D2932 /* AnalysisScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisScreen.swift; sourceTree = "<group>"; };
@@ -89,6 +93,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		535C2AF72C9C2BA400B4C026 /* Profile */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Profile; sourceTree = "<group>"; };
+		535C2AFC2C9C513C00B4C026 /* Setting */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Setting; sourceTree = "<group>"; };
+		535C2AFF2C9C5A7A00B4C026 /* ChooseLanguage */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ChooseLanguage; sourceTree = "<group>"; };
 		53D8E7622C99419000AC1BC7 /* SetYourGoal */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = SetYourGoal; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
@@ -201,6 +208,7 @@
 				53095E8C2C92CA2500C0F7DB /* LocalizedKey.swift */,
 				53095E952C92CD8200C0F7DB /* LocalizedText.swift */,
 				53C5D98F2C96EA99007D2932 /* LocalizedNavTitle.swift */,
+				535C2B022C9C5C5000B4C026 /* LocalizedButton.swift */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -243,6 +251,9 @@
 		53095E9C2C92D20B00C0F7DB /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				535C2AFF2C9C5A7A00B4C026 /* ChooseLanguage */,
+				535C2AFC2C9C513C00B4C026 /* Setting */,
+				535C2AF72C9C2BA400B4C026 /* Profile */,
 				53D8E7622C99419000AC1BC7 /* SetYourGoal */,
 				53C5D98A2C96B6B4007D2932 /* Analysis */,
 				5365698E2C957C790012E7BD /* Home */,
@@ -270,6 +281,7 @@
 				53C5D98D2C96C240007D2932 /* NotificationBadge.swift */,
 				53C5D9912C96EF3B007D2932 /* ActivityRing.swift */,
 				53D8E7652C99516F00AC1BC7 /* DropDownMenu.swift */,
+				535C2AFA2C9C30F500B4C026 /* CustomTextField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -323,6 +335,9 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				535C2AF72C9C2BA400B4C026 /* Profile */,
+				535C2AFC2C9C513C00B4C026 /* Setting */,
+				535C2AFF2C9C5A7A00B4C026 /* ChooseLanguage */,
 				53D8E7622C99419000AC1BC7 /* SetYourGoal */,
 			);
 			name = WaterTracker;
@@ -448,7 +463,9 @@
 				53C5D9902C96EA99007D2932 /* LocalizedNavTitle.swift in Sources */,
 				53D8E7662C99516F00AC1BC7 /* DropDownMenu.swift in Sources */,
 				53095E962C92CD8200C0F7DB /* LocalizedText.swift in Sources */,
+				535C2B032C9C5C5000B4C026 /* LocalizedButton.swift in Sources */,
 				536569902C957C820012E7BD /* HomeScreen.swift in Sources */,
+				535C2AFB2C9C30F500B4C026 /* CustomTextField.swift in Sources */,
 				53095EB52C93546100C0F7DB /* Wave.swift in Sources */,
 				53095E912C92CA9700C0F7DB /* AppLanguage.swift in Sources */,
 				53095EAB2C92DBD800C0F7DB /* OnboardingScreen.swift in Sources */,

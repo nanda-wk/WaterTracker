@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TabScreen: View {
+    @EnvironmentObject var preferences: UserPreferences
     @State private var selected: TabItem = .home
     @State private var allTabs: [AnimatedTab] = TabItem.allCases.compactMap { tab in
         .init(tab: tab)
@@ -27,12 +28,12 @@ struct TabScreen: View {
                 .tag(TabItem.analysis)
 
                 NavigationView {
-                    LocalizedText(TabItem.settings.title)
+                    SettingScreen()
                 }
                 .tag(TabItem.settings)
 
                 NavigationView {
-                    LocalizedText(TabItem.profile.title)
+                    ProfileScreen()
                 }
                 .tag(TabItem.profile)
             }
@@ -75,7 +76,7 @@ struct TabScreen: View {
                     }
 
                     LocalizedText(tab.title)
-                        .font(.callout)
+                        .font(preferences.appLang == AppLanguage.Eng ? .callout : .footnote)
                         .fontWeight(.medium)
                 }
                 .padding(.top, 10)

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum AppLanguage: String {
+enum AppLanguage: String, CaseIterable {
     case Eng
     case Mm
 

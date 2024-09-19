@@ -30,7 +30,9 @@ struct OnboardingScreen: View {
 
             Spacer()
 
-            AppButton(title: .btn_get_started) {}
+            AppButton(title: .btn_get_started) {
+                preferences.isFirstLaunch = false
+            }
                 .padding(.horizontal, 28)
                 .padding(.bottom, 28)
         }

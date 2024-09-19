@@ -13,6 +13,7 @@ var langDict: [String: [String: String]] = [:]
 @main
 struct WaterTrackerApp: App {
     @StateObject private var preferences = UserPreferences()
+    @State var isLoading = true
 
     init() {
         langDict = Bundle.main.decode([String: [String: String]].self, from: "Language.json")
@@ -20,8 +21,23 @@ struct WaterTrackerApp: App {
 
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                TabScreen()
+            Group {
+                if !isLoading {
+                    if !preferences.isFirstLaunch {
+                        NavigationView {
+                            TabScreen()
+                        }
+                    } else {
+                        OnboardingScreen()
+                    }
+                } else {
+                    SplashScreen()
+                        .onAppear {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                isLoading = false
+                            }
+                        }
+                }
             }
             .preferredColorScheme(preferences.appTheme.colorScheme)
         }
